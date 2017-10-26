@@ -2,13 +2,33 @@
 <html>
 	<head>
 		<title>Neel Chaudhari</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+   		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+   		<link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<style>
 			.content {
 				position: absolute;
 				top: 50%;
 				left:50%;
 				transform: translate(-50%,-50%);
+			}
+			.footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				/* Set the fixed height of the footer here */
+				height: 7%;
+				font-size: 50px;
+			}
+			.footer-icon{
+				-o-transition:0.25s;
+				-ms-transition:0.25s;
+				-moz-transition:0.25s;
+				-webkit-transition:0.25s;
+				transition:0.25s;
+				color:black;
+			}
+			.footer-icon:hover{
+				color:gray;
 			}
 		</style>
 	</head>
@@ -18,8 +38,13 @@
 			<span class="typer" id="main" data-words="Software Developer, Tech Enthusiast, Photographer, Filmmaker" data-colors="blue" data-delay="100" data-deleteDelay="1000"></span>
 			<span class="cursor" data-owner="main"></span>
 		</div>
+		<footer class="footer">
+			<div class="content"=>
+				<a href="./neelc_resume.pdf" target="_blank"><i size="100" class="fa fa-user footer-icon" aria-hidden="true"></i></a>
+			</div>
+		</footer>
 	</body>
 	<script src="assets/js/typer.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
 </html>

@@ -34,7 +34,7 @@ header img{
   position:relative;
 }
 header a:active{
-  top:5px; 
+  top:5px;
 }
 
 .jumbotron {
@@ -99,4 +99,4 @@ footer ul {
   list-style: none;
 }
 
-footer li img 
+footer li img

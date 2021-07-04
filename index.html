@@ -5,8 +5,9 @@
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 		<link rel="icon" href="./favicon.ico" type="image/x-icon">
  		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
- 		<link href="./assets/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+ 		<link href="./assets/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
 		<link href="./assets/css/main.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
 	</head>
 	<body>
 		<div class="content">
@@ -44,5 +45,28 @@
 			}
 			document.getElementById("namewordart").src = wordarts[rand];
 		}
+	</script>
+	<script src="https://unpkg.com/jquery@latest"></script>
+	<script src="./assets/clippy.js"></script>
+	<script type="text/javascript">
+	  clippy.load('Clippy', function(agent) {
+			agent.moveTo("46%", "5%");
+    	agent.play("Greeting");
+			agent.speak("Hello!");
+			agent.play("GetAttention");
+			agent.speak("Welcome to Neel's website!");
+			agent.play("Explain");
+			agent.moveTo("46%", "75%");
+			agent.speak("Click these links to check out some of his stuff.");
+			agent.play("GestureDown");
+			agent.moveTo("75%", "40%");
+			agent.speak("And click his name to change the font!");
+			agent.play("GestureRight");
+			agent.speak("Y'know, in case you strongly desire to see more goofy WordArt... 🙃");
+			agent.play("LookRight");
+			agent.moveTo("5%", "5%");
+			agent.speak("Thanks for visiting!");
+			agent.play("Congratulate");
+		});
 	</script>
 </html>

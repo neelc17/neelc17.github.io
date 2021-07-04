@@ -1,8 +1,9 @@
 .content {
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%,-50%);
+  text-align: center;
 }
 
 .footer {
@@ -14,12 +15,12 @@
 }
 
 .footer-icon{
-  -o-transition:0.5s;
-  -ms-transition:0.5s;
-  -moz-transition:0.5s;
-  -webkit-transition:0.5s;
-  transition:0.5s;
-  color:black;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
 }
 
 #instagram{
@@ -29,22 +30,26 @@
   -webkit-background-clip: text;
 }
 
-#resume:hover{
-  color:inherit;
+#resume:hover {
+  color: inherit;
 }
 
-#linkedin:hover{
-  color:#2969B1;
+#linkedin:hover {
+  color: #2969B1;
 }
 
-#github:hover{
-  color:#800080;
+#github:hover {
+  color: #800080;
 }
 
-#instagram:hover{
+#instagram:hover {
   color: transparent;
 }
 
-#youtube:hover{
-  color:#FF0000;
+#youtube:hover {
+  color: #FF0000;
+}
+
+#namewordart:hover {
+  cursor: pointer;
 }

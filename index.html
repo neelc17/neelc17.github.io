@@ -10,9 +10,10 @@
 	</head>
 	<body>
 		<div class="content">
-			<h1>Neel Chaudhari</h1>
-			<!--<span class="typer" id="typeText" data-words="Programmer,Photographer,Filmmaker" data-colors="blue" data-delay="50" data-deleteDelay="1000"></span>
-			<span class="cursor" data-owner="typeText"></span>-->
+			<img id="namewordart" class="onlyjs" style="display:none" src="./assets/images/wordart0.png" width="100%" onclick="nextImg()" alt="Neel Chaudhari WordArt!" />
+			<noscript>
+				<h1>Neel Chaudhari</h1>
+			</noscript>
 		</div>
 		<footer class="footer">
 			<div class="content"=>
@@ -24,5 +25,24 @@
 			</div>
 		</footer>
 	</body>
-	<script src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+	<script type="text/javascript">
+		Array.from(document.getElementsByClassName("onlyjs")).forEach((item) => {
+			item.style.display = "block";
+		});
+
+		let wordarts = [];
+		for (let i = 0; i < 12; i++) {
+			wordarts.push(`./assets/images/wordart${i}.png`);
+		}
+		let rand = Math.floor(Math.random() * wordarts.length);
+		document.getElementById("namewordart").src = wordarts[rand];
+
+		function nextImg() {
+			rand++;
+			if (rand == 12) {
+				rand = 0;
+			}
+			document.getElementById("namewordart").src = wordarts[rand];
+		}
+	</script>
 </html>
